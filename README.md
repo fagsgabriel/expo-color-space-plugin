@@ -6,6 +6,8 @@ An Expo config plugin that lets you easily configure the default color space for
 
 ⚠️ Note: If exact color matching with your design files is critical, stick with sRGB. Switching to Display P3 may cause colors in your app to appear more saturated than in your design tools.
 
+<img width="3993" height="3600" alt="color-space" src="https://github.com/user-attachments/assets/adde0ce3-9739-40c5-9290-8e91bcd4d150" />
+
 ## Requirements
 
 - Expo SDK 53+
