@@ -1,6 +1,6 @@
 # Expo Color Space Plugin 🎨
 
-An Expo config plugin that lets you easily configure the default color space for your iOS app, without manually editing the AppDelegate.
+An Expo config plugin that lets you easily enable P3 Color Space for your app (iOS only). 
 
 📌 By default, React Native renders all colors in the sRGB color space. With this plugin, you can switch to Display P3, a wide-gamut color space to achieve richer and more vibrant colors.
 
