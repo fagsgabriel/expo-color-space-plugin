@@ -23,26 +23,22 @@ const withColorSpacePlugin: ConfigPlugin<ColorSpacePluginConfig | void> = (confi
       const projectName = config.modRequest.projectName || config.name;
       
       if (!projectName) {
-        throw new Error('Project name not found in config');
+        throw new Error('Expo Color Space Plugin: Project name not found in config');
       }
       
       // Paths to AppDelegate files
       const appDelegateSwiftPath = path.join(iosDir, projectName, 'AppDelegate.swift');
       const bridgingHeaderPath = path.join(iosDir, projectName, `${projectName}-Bridging-Header.h`);
 
-      try {
-        console.log('🎨 Configuring color space plugin...');
-        
+      try {        
         // Modify Bridging Header to add the import
         await modifyBridgingHeader(bridgingHeaderPath);
         
         // Modify AppDelegate.swift to add the color space configuration
         await modifyAppDelegateSwift(appDelegateSwiftPath, colorSpace);
-        
-        console.log(`✅ Color space plugin configured with ${colorSpace}`);
-        
+                
       } catch (error) {
-        console.error('❌ Error modifying AppDelegate files:', error);
+        console.error('❌ Expo Color Space Plugin: Error modifying AppDelegate files:', error);
         throw error;
       }
 
