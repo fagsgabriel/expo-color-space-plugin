@@ -1,7 +1,7 @@
 {
   "name": "expo-color-space-plugin",
-  "version": "0.0.1",
-  "description": "An Expo plugin to configure color space",
+  "version": "0.0.2",
+  "description": "An Expo plugin to configure iOS color space",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
@@ -38,6 +38,6 @@
     "@types/node": "^18.0.0"
   },
   "peerDependencies": {
-    "expo": "*"
+    "expo": ">=53.0.0"
   }
 }
