@@ -1,8 +1,10 @@
-# Expo Color Space Plugin
+# Expo Color Space Plugin 🎨
 
-A simple Expo plugin that updates the default color space for iOS apps.
+An Expo config plugin that lets you easily configure the default color space for your iOS app, without manually editing the AppDelegate.
 
-⚠️ **Note**: This is experimental and may affect color consistency with your design tools (like Figma). Consider keeping sRGB if precise color matching with your designs is critical.
+📌 By default, React Native renders all colors in the sRGB color space. With this plugin, you can switch to Display P3, a wide-gamut color space to achieve richer and more vibrant colors.
+
+⚠️ Note: If exact color matching with your design files is critical, stick with sRGB. Switching to Display P3 may cause colors in your app to appear more saturated than in your design tools.
 
 ## Requirements
 
@@ -11,18 +13,10 @@ A simple Expo plugin that updates the default color space for iOS apps.
 ## Installation
 
 ```bash
-npm install expo-color-space-plugin
-```
-
-or
-
-```bash
-yarn add expo-color-space-plugin
+yarn add -D expo-color-space-plugin
 ```
 
 ## Usage
-
-### 1. Add to your app config
 
 In your `app.config.js`/`app.config.ts`/`app.json`:
 

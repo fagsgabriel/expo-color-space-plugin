@@ -38,7 +38,7 @@ const withColorSpacePlugin: ConfigPlugin<ColorSpacePluginConfig | void> = (confi
         await modifyAppDelegateSwift(appDelegateSwiftPath, colorSpace);
                 
       } catch (error) {
-        console.error('❌ Expo Color Space Plugin: Error modifying AppDelegate files:', error);
+        console.error('❌ Error modifying AppDelegate files (expo-color-space-plugin):', error);
         throw error;
       }
 
@@ -54,7 +54,7 @@ const withColorSpacePlugin: ConfigPlugin<ColorSpacePluginConfig | void> = (confi
  */
 async function modifyBridgingHeader(filePath: string): Promise<void> {
   if (!fs.existsSync(filePath)) {
-    console.warn(`⚠️ Bridging header not found at ${filePath}`);
+    console.warn(`⚠️ Bridging header not found at ${filePath} (expo-color-space-plugin)`);
     return;
   }
 
@@ -63,7 +63,6 @@ async function modifyBridgingHeader(filePath: string): Promise<void> {
   
   // Check if import already exists
   if (headerContent.includes(importStatement)) {
-    console.log('ℹ️ RCTColorSpaceUtils import already exists in bridging header');
     return;
   }
 
@@ -71,7 +70,6 @@ async function modifyBridgingHeader(filePath: string): Promise<void> {
   headerContent = headerContent.trim() + '\n' + importStatement + '\n';
   
   fs.writeFileSync(filePath, headerContent);
-  console.log('✅ Added RCTColorSpaceUtils import to bridging header');
 }
 
 /**
@@ -82,7 +80,7 @@ async function modifyAppDelegateSwift(
   colorSpace: string
 ): Promise<void> {
   if (!fs.existsSync(filePath)) {
-    console.warn(`⚠️ AppDelegate.swift not found at ${filePath}`);
+    console.warn(`⚠️ AppDelegate.swift not found at ${filePath} (expo-color-space-plugin)`);
     return;
   }
 
@@ -95,7 +93,6 @@ async function modifyAppDelegateSwift(
   
   // Check if we still have color space calls (shouldn't happen after removal)
   if (swiftContent.includes('RCTColorSpaceUtils.applyDefaultColorSpace')) {
-    console.log('ℹ️ Color space configuration already exists in AppDelegate.swift');
     return;
   }
 
@@ -104,7 +101,7 @@ async function modifyAppDelegateSwift(
   const match = swiftContent.match(returnRegex);
   
   if (!match) {
-    console.warn('⚠️ Could not find return super.application line in AppDelegate.swift');
+    console.warn('⚠️ Could not find return super.application line in AppDelegate.swift (expo-color-space-plugin)');
     return;
   }
 
@@ -115,7 +112,6 @@ async function modifyAppDelegateSwift(
     swiftContent.slice(returnStart);
   
   fs.writeFileSync(filePath, swiftContent);
-  console.log(`✅ Added color space configuration (${colorSpace}) to AppDelegate.swift`);
 }
 
 export default withColorSpacePlugin;
