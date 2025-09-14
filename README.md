@@ -52,7 +52,7 @@ npx expo prebuild --clean
 
 ## How it works
 
-The plugin simply adds one line of code to your iOS AppDelegate to set the default color space. 
+There's no real magic here 😅. The plugin [simply adds a single line of code to your iOS AppDelegate](https://github.com/facebook/react-native/pull/42831#issuecomment-2569264896) to set the default color space.
 
 ## License
 
