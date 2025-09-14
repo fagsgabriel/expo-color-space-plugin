@@ -2,18 +2,16 @@
   "name": "expo-color-space-plugin",
   "version": "0.0.1",
   "description": "An Expo plugin to configure color space",
-  "main": "app.plugin.js",
-  "types": "plugin/build/index.d.ts",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "scripts": {
-    "build": "expo-module build plugin",
-    "clean": "expo-module clean plugin",
-    "lint": "expo-module lint plugin --fix",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "npm run build"
+    "build": "tsc",
+    "clean": "rm -rf build",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
-    "app.plugin.js",
-    "plugin/build/**/*",
+    "build/**/*",
     "README.md"
   ],
   "keywords": [

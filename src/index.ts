@@ -1,7 +1,4 @@
 import {
-  withInfoPlist,
-  withAndroidManifest,
-  AndroidConfig,
   ConfigPlugin,
   withDangerousMod,
 } from 'expo/config-plugins';
