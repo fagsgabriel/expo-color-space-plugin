@@ -1,0 +1,45 @@
+{
+  "name": "expo-color-space-plugin",
+  "version": "0.0.1",
+  "description": "An Expo plugin to configure color space",
+  "main": "app.plugin.js",
+  "types": "plugin/build/index.d.ts",
+  "scripts": {
+    "build": "expo-module build plugin",
+    "clean": "expo-module clean plugin",
+    "lint": "expo-module lint plugin --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "app.plugin.js",
+    "plugin/build/**/*",
+    "README.md"
+  ],
+  "keywords": [
+    "expo",
+    "plugin",
+    "config-plugin",
+    "color-space",
+    "ios",
+    "react-native"
+  ],
+  "repository": "https://github.com/enzomanuelmangano/expo-color-space-plugin",
+  "bugs": {
+    "url": "https://github.com/enzomanuelmangano/expo-color-space-plugin/issues"
+  },
+  "author": "Enzo Manuel Mangano <enzomanuelmangano@gmail.com> (https://github.com/enzomanuelmangano)",
+  "license": "MIT",
+  "homepage": "https://github.com/enzomanuelmangano/expo-color-space-plugin#readme",
+  "dependencies": {
+    "@expo/config-plugins": "^7.0.0"
+  },
+  "devDependencies": {
+    "expo-module-scripts": "^5.0.7",
+    "typescript": "^5.0.0",
+    "@types/node": "^18.0.0"
+  },
+  "peerDependencies": {
+    "expo": "*"
+  }
+}
