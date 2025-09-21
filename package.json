@@ -1,6 +1,6 @@
 {
   "name": "expo-color-space-plugin",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "An Expo plugin to configure iOS color space",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -22,7 +22,10 @@
     "ios",
     "react-native"
   ],
-  "repository": "https://github.com/enzomanuelmangano/expo-color-space-plugin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enzomanuelmangano/expo-color-space-plugin.git"
+  },
   "bugs": {
     "url": "https://github.com/enzomanuelmangano/expo-color-space-plugin/issues"
   },
