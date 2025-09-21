@@ -60,3 +60,5 @@ example/
 
 .cursor
 *.tsbuildinfo
+
+CLAUDE.md
